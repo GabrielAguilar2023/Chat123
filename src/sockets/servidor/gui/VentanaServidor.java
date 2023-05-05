@@ -8,7 +8,8 @@ public class VentanaServidor extends JFrame {
     private PanelServidor contenedorDelServidor;
 
     public VentanaServidor() throws HeadlessException {
-        setBounds(1200, 300, 280, 350);
+        setTitle("Chat123");
+        setBounds(600, 200, 240, 320);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         contenedorDelServidor = new PanelServidor();
         add(contenedorDelServidor);

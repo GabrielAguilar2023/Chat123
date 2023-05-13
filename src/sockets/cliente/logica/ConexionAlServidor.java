@@ -8,7 +8,7 @@ public class ConexionAlServidor {
 
     public static void enviarDatoAlServidor (Object dato) {
         try {
-            Socket miSocket = new Socket("192.168.0.37", 9998);
+            Socket miSocket = new Socket("192.168.0.38", 9998); // Sacar el numero del host con ipconfig
             ObjectOutputStream flujoSalida = new ObjectOutputStream(miSocket.getOutputStream());
             flujoSalida.writeObject(dato); //
             flujoSalida.close();
